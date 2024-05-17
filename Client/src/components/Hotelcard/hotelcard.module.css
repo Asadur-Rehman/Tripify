@@ -1,0 +1,10 @@
+.hotelcard {
+  width: 18rem;
+  min-width: 18rem;
+  margin-bottom: 4%;
+}
+.cardsRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

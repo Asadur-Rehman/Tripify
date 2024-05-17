@@ -1,0 +1,18 @@
+@media (max-width: 890px) {
+    .formcontainer{
+      width: 70% !important;
+    }
+  }
+@media (max-width: 600px) {
+    .formcontainer{
+      width: 80% !important;
+    }
+  }
+@media (max-width: 446px) {
+
+    .formcontainer{
+      width:90% !important;
+    }
+  }
+
+  

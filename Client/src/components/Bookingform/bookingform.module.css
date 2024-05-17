@@ -1,0 +1,28 @@
+.maincontainer {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .heading {
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    margin: 2%;
+  }
+  .hr{
+    display: flex;
+    justify-content: center;
+  }
+  .lowercontainer {
+    margin: 0% 5% 5% 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .hoteldetail{
+    min-width:500px;
+  }
+  .bookform{
+    min-width:300px;
+  }

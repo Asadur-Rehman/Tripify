@@ -1,0 +1,101 @@
+.maincontainer {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../../assets/contactus.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* .upperrow {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 15vh;
+}
+.logowidth {
+  width: 25%;
+}
+.goback {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.gobacklink {
+  justify-content: space-between;
+  color: green;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 100%;
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+.gobacklink:hover {
+  color: white;
+}
+.hr {
+  border-top: 2px solid green;
+} */
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchinput {
+  font-family: "Times New Roman", Times, serif;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 50%;
+}
+.searchinput:focus {
+  outline: 2px solid #198754 !important;
+  border: 1px solid #198754 !important;
+}
+
+.gethelphrdiv {
+  margin: auto;
+  width: 15%;
+  height: 3px;
+  background-color: #198754;
+}
+.cardrow {
+  margin: 0;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  width: 30%;
+  padding: 2%;
+}
+.card:hover {
+  border: 1px solid black;
+}
+.card:hover a {
+  color: #198754 !important;
+}
+.card:hover img {
+  margin-bottom: 2% !important;
+}
+
+.smallfooter {
+  margin-top: 10%;
+}
+.cardsrow{
+  flex-wrap: wrap;
+}
+.card{
+  min-width: 300px;
+}

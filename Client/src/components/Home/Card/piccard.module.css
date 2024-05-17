@@ -1,0 +1,126 @@
+.parent {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 5vh 0;
+}
+.section {
+  padding: 0 20vh;
+  font-size: 3rem;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 3vh 20vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.innerdiv {
+  max-width: 25vw;
+  height: 250px;
+  filter: drop-shadow(5px 5px 5px #00000065);
+  background-size: cover;
+  background-position:center;
+}
+@media (max-width: 1361px) {
+  .innerdiv {
+    max-width: 600px;
+    height: 400px;
+    margin-top: 2%;
+  }
+  .container {
+    justify-content: center;
+  }
+}
+/* .img {
+  width: 100%;
+  filter: brightness(70%);
+  z-index: -1;
+} */
+.imgText {
+  position: relative;
+  top: 30%;
+}
+@media (max-width: 1361px) {
+  .imgText {
+    top: 60%;
+  }
+}
+.container2 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 0 20vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.innerdiv2 {
+  max-width: 40vw;
+  height: 400px;
+  filter: drop-shadow(5px 5px 5px #00000065);
+  background-size: cover;
+  background-position:center;
+}
+
+@media (max-width: 1362px) {
+  .innerdiv2 {
+    max-width: 600px;
+    height: 400px;
+    margin-top: 2%;
+  }
+  .container2 {
+    justify-content: center;
+  }
+}
+/* .img2 {
+  width: 100%;
+  height: 100%;
+  filter: brightness(60%);
+} */
+.imgText2 {
+  position: relative;
+  top: 60%;
+}
+@media (max-width:960px){
+  .section{
+    font-size: 2.5rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .innerdiv{
+    height: 300px !important;
+  }
+  .innerdiv2{
+    height: 300px !important;
+  }
+  .imgText{
+    top:50% !important;
+    font-size: 14px;
+  }
+  .imgText2{
+    top:50% !important;
+    font-size: 14px;
+  }
+}
+
+@media (max-width:700px) {
+  .date{
+    margin-top:2% !important;
+  }
+  .detail{
+    margin-bottom: 0 !important;
+  }
+  .container,.container2,.section{
+    padding-left:7vh;
+    padding-right:7vh;
+  }
+}
+@media (max-width:446px){
+  .container,.container2,.section,.parent{
+    width: 446px;
+  }
+} 

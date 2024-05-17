@@ -1,0 +1,33 @@
+.maincard {
+  margin: auto;
+  width: 85%;
+  height: 35vw;
+  padding: 4%;
+  background-image: url("../../assets/special-deals.jpg");
+  background-size: cover;
+}
+.maincard h1 {
+  font-weight: 800;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 5vw;
+}
+.maincard p {
+  font-weight: 400;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:1.2vw ;
+}
+.smallcards {
+  width: 85%;
+  height: 100%;
+  margin: auto;
+}
+.smallcardsrow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card{
+    width: 32%;
+    min-width: 250px;
+}

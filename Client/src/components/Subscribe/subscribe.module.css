@@ -1,0 +1,42 @@
+.c3card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 350px;
+  }
+  .subscribe{
+    width: 65%;
+  }
+  .colum{
+    min-width: 300px;
+  }
+  @media(max-width:768px){
+    .c3card button{
+      margin-top:2%;
+    }
+  }
+  @media(max-width:550px){
+    .container3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .c3card{
+      padding: 4% !important;
+    }
+    .colum h1{
+      font-size:1.5rem ;
+    }
+    .colum p{
+      font-size:12px !important ;
+    }
+    .colum button{
+      font-size:12px !important ;
+    }
+  }
+  @media(max-width:446px){
+    .container3{
+      width: 446px;
+    }
+  }

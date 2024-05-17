@@ -1,0 +1,43 @@
+.support-container, .support-container * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-container {
+    float: left;
+    width: 15%;
+    position: fixed;
+}
+
+.support-container > *:not(:first-child) {
+    margin-left: 15%;
+}
+
+
+.support-container {
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+
+.customerHeading {
+    padding-left: 32px;
+}
+
+.customerHeading h1 {
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.customersTableContainer {
+    padding: 0 32px;
+    margin-top: 20px;
+}
+
+table {
+    border: 1px solid black;
+}
+
+.btnDelete {
+    padding: 4px;
+}

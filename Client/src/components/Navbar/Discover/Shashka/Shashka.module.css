@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+}
+.shashka1Description{
+    flex: 1;
+}
+.heading{
+    padding: 5px 0 0 15px;
+}
+.description{
+    padding: 5px 20px 0 15px;
+}
+.shashka2Description{
+    flex: 1;
+    /* box-sizing: border-box; */
+    /* padding: 20px */
+}
+.shashka2Image{
+    flex: 1;
+    object-fit: cover;
+}
+
+.shashka1{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+.shashka2{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+@media only screen and (max-width:640px){
+    .container{
+        width: 100%;
+        flex-direction: column;
+        margin: 10% 0;
+    }
+    .shashka1{
+        display: none;
+    }
+    
+    .shashka2{
+        flex-direction: column;
+       
+    }
+
+}

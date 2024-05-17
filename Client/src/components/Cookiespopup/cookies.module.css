@@ -1,0 +1,23 @@
+.ccontainer {
+  width: 80%;
+  margin: 2% auto !important;
+  padding: 2% 4% !important;
+}
+.cheading {
+  font-weight: bolder !important;
+}
+.callowdiv {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.clink {
+  text-decoration: none !important;
+}
+.clink:hover {
+  text-decoration: underline !important;
+  color: green !important;
+}
+.fmore:hover{
+  color: blue !important;
+}

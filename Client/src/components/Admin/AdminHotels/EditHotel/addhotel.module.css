@@ -1,0 +1,23 @@
+
+  .form{
+    margin: auto;
+  }
+  .namescontainer{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+  }
+  .namewidth{
+    width:49%;
+    min-width: 150px;
+  }
+
+.sidebar-container {
+    float: left;
+    width: 15%;
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+

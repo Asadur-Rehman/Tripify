@@ -1,0 +1,31 @@
+.maincontainer {
+    width: 100%;
+    height: 80vh;
+    background-image: url("../../../assets/hotel.jpg");
+    background-size: cover;
+  }
+  .mainoption{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      /* display: flex;
+      flex-direction: column;
+      align-items: center; */
+  }
+  .pagetitle {
+    font-size: 5rem;
+    font-weight: 600;
+    color: white;
+    font-family: Impact, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+  }
+  .maincontainer input{
+    width: 35vw;
+  }
+  .left{
+    border-right: 1px solid green;
+  }
+  

@@ -1,0 +1,27 @@
+.searchform {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.searchcard {
+  background: rgba(255, 255, 255, 0.31);
+}
+.searchbarheading {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+.searchbartext {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 600;
+}

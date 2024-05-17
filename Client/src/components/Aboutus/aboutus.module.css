@@ -1,0 +1,95 @@
+.container1 {
+  width: 100%;
+  height: 90vh;
+  background-image: url("../../assets/aboutus.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+  font-size: 5rem;
+  color: white;
+  font-weight: 600;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+.subheading {
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  font-family: "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+
+.aboutdetail {
+  width: 40%;
+  margin: auto;
+}
+
+.container4 {
+  padding: 5%;
+}
+.c4heading {
+  width: 40%;
+}
+.c4card {
+  background-color: rgba(0, 128, 0, 0.386);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin-top: 4%;
+}
+.cardsrow{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .aboutdetail{
+    width: 60% !important;
+  }
+}
+@media (max-width: 768px) {
+  .cardsrow {
+    justify-content: center;
+  }
+  .c4heading{
+    font-size: 1.5rem !important;
+  }
+  .heading{
+    font-size: 4rem;
+  }
+  .subheading{
+    font-size: 1.5rem;
+  }
+  .container1{
+    height:60vh;
+  }
+}
+@media (max-width: 768px) {
+  
+  .heading{
+    font-size: 3rem;
+  }
+  .subheading{
+    font-size: 1rem;
+  }
+  .container1{
+    height:50vh;
+  }
+}
+
+@media (max-width:446px){
+  .container1{
+    width: 446px;
+  }
+  .container2{
+    width: 446px;
+  }
+  .container4{
+    width: 446px;
+  }
+}

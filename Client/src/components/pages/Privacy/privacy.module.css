@@ -1,0 +1,27 @@
+.maincontainer {
+  width: 100%;
+  height: 80vh;
+}
+.mainImg {
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+.maintext {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.pagetitle{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+.privacypolicy{
+    margin: 5% 10%;
+}

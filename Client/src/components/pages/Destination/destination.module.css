@@ -1,0 +1,15 @@
+.carousaldiv {
+  width: 100%;
+  height: 90vh;
+}
+.carousalimg {
+  width: 100%;
+  height: 100%;
+}
+.lowercontainer {
+    padding: 5% 5% 0% 10%;
+}
+.destinationcards {
+    border-top: 1px solid black;
+    margin: 0% 5% 4% 10%;
+}

@@ -1,0 +1,29 @@
+.nav-link-container, .nav-link-container * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    /* background-color: green; */
+    color: #7e93ad;
+}
+
+.link-icon-container {
+    width: 10%;
+    font-size: 1.5rem;
+}
+
+.link-icon-container i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link-text-container {
+    font-size: 1.1rem;
+    margin-left: 10px !important;
+}

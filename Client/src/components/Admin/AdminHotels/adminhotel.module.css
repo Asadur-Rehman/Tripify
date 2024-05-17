@@ -1,0 +1,50 @@
+.hotels-container, .hotels-container * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hotels-container > *:not(:first-child) {
+    margin-left: 15%;
+}
+
+.sidebar-container {
+    float: left;
+    width: 15%;
+    position: fixed;
+}
+
+.hotels-container {
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+
+.hotelHeading {
+    padding-left: 32px;
+}
+
+.hotelHeading h1 {
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.hotelHeading p {
+    opacity: 0.7;
+}
+
+.hotelsTableContainer {
+    padding: 0 32px;
+    margin-top: 20px;
+}
+
+table {
+    border: 1px solid black;
+}
+
+.btnDelete {
+    padding: 4px;
+}
+
+.btnEdit {
+    padding: 4px 10px;
+}

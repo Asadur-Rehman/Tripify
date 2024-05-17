@@ -1,0 +1,92 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/homepage.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
+.maintitle{
+  font-size: 3rem;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+.outter {
+  background-color: white;
+  padding:5% !important;
+}
+
+.viewbtn {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.partnersrow{
+  padding: 0 10%;
+  margin: 5% 0% 5% 0%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap ;
+}
+.plogoDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plogoDiv img{
+  width: 100%;
+  min-width: 100px;
+  max-width: 150px;
+}
+
+@media (max-width:1196rem){
+  .maintitle{
+    font-size: 2.5rem;
+  }
+}
+@media (max-width:900px){
+  .maintitle{
+    font-size: 2rem;
+  }
+}
+@media (max-width:670px){
+  .maintitle{
+    font-size: 1.8rem;
+  }
+  .viewdest{
+    font-size: 0.8rem;
+  }
+}
+@media (max-width:600px){
+  .maintitle{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width:500px){
+  .maintitle{
+    font-size: 1.2rem;
+  }
+  .main{
+    height: 50vh;
+  }
+  .oheading h2{
+    font-size: 1.5rem;
+    }
+  .oheading p{
+    font-size: 1rem;
+    }
+}
+
+
+@media (max-width:446px){
+  .main{
+  width: 446px;
+  }
+  .outter{
+    width: 446px;
+  }
+}

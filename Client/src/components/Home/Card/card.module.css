@@ -1,0 +1,96 @@
+.parent {
+  height: 25vw !important;
+  width: 20vw !important;
+  border-radius: 1.5rem;
+  overflow: hidden !important;
+}
+.piccard {
+  height: 100% !important;
+  width: 100% !important;
+  /* background-image: url("../../../assets/islamabad.jpg"); */
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  transition: 0.5s;
+  border-radius: 1.5rem;
+}
+
+.parent:hover .piccard,
+.parent:focus .piccard {
+  transform: scale(1.2);
+}
+.piccard::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.233);
+}
+.parent:hover .piccard::before,
+.parent:focus .piccard::before {
+  display: block;
+}
+.cardcontent{
+  position: relative;
+  bottom: 30%;
+  text-decoration: none;
+}
+.cardtitle {
+  font-size: 2vw;
+  font-weight: 600;
+  color: white;
+  /* position: relative;
+  bottom: 50%; */
+  font-family: open sans-serif;
+  text-decoration: none;
+}
+
+.cardbtn {
+  font-size: 1.2vw;
+  font-weight: 400;
+  height: 2vw !important;
+  width: 6vw !important;
+  color: white;
+  background-color: #0000001c;
+  /* position: relative;
+  bottom: 50%; */
+  font-family: open sans-serif;
+  border-radius: 2rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardsrow {
+  justify-content: space-between;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.parent{
+  min-height:350px;
+  min-width: 300px;
+  margin-top:5%;
+}
+@media (max-width:1100px){
+  .cardtitle{
+    font-size: 2rem;
+  }
+  .cardbtn{
+    width: 30% !important;
+    font-size: 16px !important;
+    padding: 5% !important;
+  }
+}
+@media (max-width:640px){
+  .cardsrow{
+    justify-content: center;
+  }
+}
+
+

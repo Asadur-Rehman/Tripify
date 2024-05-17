@@ -1,0 +1,10 @@
+export const shashkaData = [{
+    image: require("../../../../assets/pak.jpg"),
+    heading:"Pakistan",
+    description: "Pakistan (Urdu: پاکِستان [ˈpaːkɪstaːn]),[d] officially the Islamic Republic of Pakistan (اِسلامی جمہوریہ پاکِستان), is a country in South Asia. It is the world's fifth-most populous country, with a population of almost 243 million people, and has the world's second-largest Muslim population just behind Indonesia.[18] Pakistan is the 33rd-largest country in the world by area and 2nd largest in South Asia, spanning 881,913 square kilometres (340,509 square miles). It has a 1,046-kilometre (650-mile) coastline along the Arabian Sea and Gulf of Oman in the south, and is bordered by India to the east, Afghanistan to the west, Iran to the southwest, and China to the northeast. It is separated narrowly from Tajikistan by Afghanistan's Wakhan Corridor in the north, and also shares a maritime border with Oman. Islamabad is the nation's capital, while Karachi is its largest city and financial centre."
+},
+{
+    image:require("../../../../assets/china.jpg"),
+    heading:"China",
+    description: "China (Chinese: 中国, Pinyin: Zhōngguo), officially the People's Republic of China (PRC),[k] is a country in East Asia. It is the world's most populous country, with a population exceeding 1.4 billion, slightly ahead of India. China spans the equivalent of five time zones and borders fourteen countries by land,[l] the most of any country in the world, tied with Russia. Covering an area of approximately 9.6 million square kilometers (3,700,000 sq mi), it is the world's third largest country by total land area.[m] The country consists of 22 provinces,[n] five autonomous regions, four municipalities, and two Special Administrative Regions (Hong Kong and Macau). The national capital is Beijing, and the most populous city and financial center is Shanghai."
+}]

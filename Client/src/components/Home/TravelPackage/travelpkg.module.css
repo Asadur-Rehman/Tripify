@@ -1,0 +1,92 @@
+.container {
+  background-color: white;
+}
+.travelpkgpic {
+  background: linear-gradient(rgba(0, 0, 0, 0.191), rgba(0, 0, 0, 0.191)),
+    url("../../../assets/travelpackage.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+}
+.offer {
+  float: right;
+}
+.heading {
+  float: right;
+}
+.mainheading{
+  margin-right: 2%;
+}
+.floatclear {
+  clear: both;
+}
+@media(max-width: 1196px){
+  .heading{
+    margin-top:2% !important;
+  }
+  .mainheading{
+    font-size: 30px;
+  }
+}
+@media (max-width:1156px){
+  .offertext{
+    font-size:18px !important;
+  }
+}
+@media (max-width:975px){
+  .offertext{
+    font-size:16px !important;
+  }
+  .mainheading{
+  font-size: 25px !important;
+  }
+  .offerdetail{
+    font-size: 16px !important;
+    width: 90% !important;
+  }
+}
+
+@media (max-width:795px){
+  .offertext{
+    font-size:12px !important;
+    padding: 6% !important;
+  }
+  .offername{
+    font-size:12px !important ;
+  }
+  .mainheading{
+  font-size: 20px !important;
+  }
+  .offerdetail{
+    font-size: 14px !important;
+    width: 90% !important;
+  }
+}
+@media (max-width:630px){
+  .travelpkgpic{
+    height:60vh;
+  }
+  .offertext{
+    font-size:12px !important;
+    padding: 4% !important;
+  }
+  .offername{
+    font-size:8px !important ;
+  }
+  .mainheading{
+  font-size: 16px !important;
+  }
+  .offerdetail{
+    font-size: 10px !important;
+    width: 90% !important;
+  }
+  .button{
+    font-size: 10px !important;
+
+  }
+}
+@media (max-width:446px){
+  .travelpkgpic{
+    width:446px;
+  }
+}

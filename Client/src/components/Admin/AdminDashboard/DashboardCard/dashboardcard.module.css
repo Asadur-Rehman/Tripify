@@ -1,0 +1,35 @@
+.container {
+    padding: 20px 40px !important;
+    width: 30%;
+}
+
+.container div h4 {
+    margin-top: 8px !important;
+    color: #364a63;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info p:nth-of-type(1) {
+    font-size: 0.8rem;
+    color: #8999af;
+}
+
+.bar {
+    display: block !important;
+    height: 100px !important;
+    width: 110px !important;
+}
+
+.info p {
+    color: #364a63;
+}
+
+h6 {
+    color: #364a63 !important;
+}
