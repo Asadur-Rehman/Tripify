@@ -6,7 +6,7 @@ export let options = {
     duration: '100s', // Duration of the test
 };
 
-const BASE_URL = 'http://localhost:8000'; // Base URL of the local server
+const BASE_URL = process.env.REACT_APP_SERVER_URL; // Base URL of the local server
 const AUTH_ENDPOINT = '/authenticateUser'; // Authentication endpoint
 
 export default function () {

@@ -8,7 +8,7 @@ export default function AdminSupport() {
   const [complaints, setComplaints] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/getAllComplaints').then((response) => {
+    axios.get(process.env.REACT_APP_SERVER_URL + '/getAllComplaints').then((response) => {
       // console.log(response.data.result);
       if (response.data.status) {
         setComplaints(response.data.result);
@@ -50,10 +50,10 @@ export default function AdminSupport() {
   //           resolve this error`,
   // },];
   const markAsResolved = async (event) => {
-    axios.post(`http://localhost:8000/resolveComplaint/${event.target.name}`).then((response) => {
+    axios.post(process.env.REACT_APP_SERVER_URL + `/resolveComplaint/${event.target.name}`).then((response) => {
       if(response.data.status) {
         console.log('resolved');
-        axios.get('http://localhost:8000/getAllComplaints').then((response) => {
+        axios.get(process.env.REACT_APP_SERVER_URL + '/getAllComplaints').then((response) => {
           // console.log(response.data.result);
           if (response.data.status) {
             setComplaints(response.data.result);

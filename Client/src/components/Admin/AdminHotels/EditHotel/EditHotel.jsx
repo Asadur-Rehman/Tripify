@@ -21,7 +21,7 @@ export default function EditHotel() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/getHotelById/${id}`).then((response) => {
+        axios.get(process.env.REACT_APP_SERVER_URL + `/getHotelById/${id}`).then((response) => {
             if (response.data.status) {
                 setName(response.data.result.name);
                 setRooms(response.data.result.numberOfRooms);
@@ -63,7 +63,7 @@ export default function EditHotel() {
     const submitHandler = async (event) => {
         event.preventDefault();
 
-        axios.post(`http://localhost:8000/editHotelById/${id}`, {
+        axios.post(process.env.REACT_APP_SERVER_URL + `/editHotelById/${id}`, {
             name,
             numberOfRooms: rooms,
             numberOfAvailableRooms: availableRooms,

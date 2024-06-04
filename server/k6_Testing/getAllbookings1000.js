@@ -12,7 +12,7 @@ export let options = {
     },
 };
 
-const BASE_URL = 'http://localhost:8000'; // Base URL of the local server
+const BASE_URL = process.env.REACT_APP_SERVER_URL; // Base URL of the local server
 const GET_BOOKINGS_ENDPOINT = '/getAllBookings'; // Endpoint for getting all bookings
 
 export default function () {

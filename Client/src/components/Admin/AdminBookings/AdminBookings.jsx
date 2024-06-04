@@ -9,7 +9,7 @@ export default function AdminBookings() {
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/getAllBookings').then((response) => {
+    axios.get(process.env.REACT_APP_SERVER_URL + '/getAllBookings').then((response) => {
       setBookings(response.data.result);
       setNumberOfBookings(response.data.result.length);
     })
@@ -27,8 +27,8 @@ export default function AdminBookings() {
   //   };
   //   const users = [user, user, user, user, user];
   const confirmBooking = async (event) => {
-    axios.post(`http://localhost:8000/confirmBooking/${event.target.name}`).then((response) => {
-      axios.get('http://localhost:8000/getAllBookings').then((response) => {
+    axios.post(process.env.REACT_APP_SERVER_URL + `/confirmBooking/${event.target.name}`).then((response) => {
+      axios.get(process.env.REACT_APP_SERVER_URL +'/getAllBookings').then((response) => {
         setBookings(response.data.result);
         setNumberOfBookings(response.data.result.length);
       })

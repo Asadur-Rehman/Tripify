@@ -32,7 +32,7 @@ export default function Contactusform() {
   const submitHandler = async (event) => {
     event.preventDefault();
 
-    axios.post("http://localhost:8000/addNewComplaint", {
+    axios.post(process.env.REACT_APP_SERVER_URL + "/addNewComplaint", {
       firstName,
       lastName,
       email,

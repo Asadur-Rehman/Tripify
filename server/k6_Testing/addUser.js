@@ -6,7 +6,7 @@ export let options = {
     duration: '1s', // Duration of the test
 };
 
-const BASE_URL = 'http://localhost:8000'; // Base URL of the local server
+const BASE_URL = process.env.REACT_APP_SERVER_URL; // Base URL of the local server
 const ADD_USER_ENDPOINT = '/addUser'; // Endpoint for adding a user
 
 export default function () {

@@ -12,7 +12,7 @@ export default function AdminHotels() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:8000/getAllHotels').then((response) => {
+    axios.get(process.env.REACT_APP_SERVER_URL + '/getAllHotels').then((response) => {
       if (response.data.status) {
         setHotels(response.data.result);
         setNumberOfHotels(response.data.result.length);
@@ -23,9 +23,9 @@ export default function AdminHotels() {
 
   const deleteHotel = async (event) => {
     setIsLoading(true);
-    axios.request(`http://localhost:8000/deleteHotelById/${event.target.name}`).then((response) => {
+    axios.request(process.env.REACT_APP_SERVER_URL + `/deleteHotelById/${event.target.name}`).then((response) => {
       if (response.data.status) {
-        axios.get('http://localhost:8000/getAllHotels').then((response) => {
+        axios.get(process.env.REACT_APP_SERVER_URL + '/getAllHotels').then((response) => {
           if (response.data.status) {
             setHotels(response.data.result);
             setNumberOfHotels(response.data.result.length);

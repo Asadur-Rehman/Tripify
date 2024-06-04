@@ -9,7 +9,7 @@ export default function AdminCustomersInfo() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/getAllUsers').then((response) => {
+    axios.get(process.env.REACT_APP_SERVER_URL + '/getAllUsers').then((response) => {
       if (response.data.status) {
         setUsers(response.data.result);
         setNumberOfCustomers(response.data.result.length);
@@ -29,9 +29,9 @@ export default function AdminCustomersInfo() {
   //   const users = [user, user, user, user, user];
 
   const deleteUser = async (event) => {
-    axios.post(`http://localhost:8000/deleteUser/${event.target.name}`).then((response) => {
+    axios.post(process.env.REACT_APP_SERVER_URL + `/deleteUser/${event.target.name}`).then((response) => {
       if (response.data.status) {
-        axios.get('http://localhost:8000/getAllUsers').then((response) => {
+        axios.get(process.env.REACT_APP_SERVER_URL + '/getAllUsers').then((response) => {
           if (response.data.status) {
             setUsers(response.data.result);
             setNumberOfCustomers(response.data.result.length);

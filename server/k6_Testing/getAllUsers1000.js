@@ -12,7 +12,7 @@ export let options = {
     },
 };
 
-const BASE_URL = 'http://localhost:8000'; // Adjust based on your actual local server URL and port
+const BASE_URL = process.env.REACT_APP_SERVER_URL; // Adjust based on your actual local server URL and port
 const HOME_ENDPOINT = '/getAllUsers'; // Adjust based on your actual home page endpoint
 
 export default function () {

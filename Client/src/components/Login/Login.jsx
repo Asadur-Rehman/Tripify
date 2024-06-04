@@ -40,7 +40,7 @@ export default function Login() {
 
     if (event.target.name === "userLogin") {
       axios
-        .post("http://localhost:8000/authenticateUser", {
+        .post(process.env.REACT_APP_SERVER_URL + "/authenticateUser", {
           email: email,
           password: password,
         })
@@ -61,7 +61,7 @@ export default function Login() {
         });
     } else if (event.target.name === "adminLogin") {
       axios
-        .post("http://localhost:8000/authenticateAdmin", {
+        .post(process.env.REACT_APP_SERVER_URL + "/authenticateAdmin", {
           email: email,
           password: password,
         })

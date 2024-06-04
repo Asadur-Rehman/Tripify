@@ -22,7 +22,7 @@ export default function Bookingform() {
   const {id} = useParams();
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/getHotelById/${id}`).then((response) => {
+    axios.get(process.env.REACT_APP_SERVER_URL + `/getHotelById/${id}`).then((response) => {
       if(response.data.status) {
         setHotelName(response.data.result.name);
         setCity(response.data.result.city);
@@ -57,7 +57,7 @@ export default function Bookingform() {
   }
 
   const submitHandler = async () => {
-    axios.post('http://localhost:8000/addNewBooking', {
+    axios.post(process.env.REACT_APP_SERVER_URL + '/addNewBooking', {
       customerName,
       customerEmail,
       customerContactNumber,
@@ -68,7 +68,7 @@ export default function Bookingform() {
       roomType,
       roomNumber
     }).then((response) => {
-      axios.get(`http://localhost:8000/getHotelById/${id}`).then((response) => {
+      axios.get(process.env.REACT_APP_SERVER_URL + `/getHotelById/${id}`).then((response) => {
       if(response.data.status) {
         setNumberOfRooms(response.data.result.numberOfRooms);
       }

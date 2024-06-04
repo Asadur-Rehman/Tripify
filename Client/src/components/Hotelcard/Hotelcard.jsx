@@ -13,7 +13,7 @@ export default function Hotelcard(props) {
   console.log(hotels);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/getAllHotels').then((response) => {
+    axios.get(process.env.REACT_APP_SERVER_URL + '/getAllHotels').then((response) => {
       if (response.data.status) {
         setHotels(response.data.result);
       }

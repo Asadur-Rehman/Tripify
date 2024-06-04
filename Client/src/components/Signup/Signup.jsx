@@ -46,7 +46,7 @@ export default function Signup() {
         setWarningMessage('Password and Confirm Password must be the same!');
       }
       else {
-        axios.post('http://localhost:8000/addUser', {
+        axios.post(process.env.REACT_APP_SERVER_URL + '/addUser', {
           firstName,
           lastName,
           email,

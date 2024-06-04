@@ -40,7 +40,7 @@ export default function AddHotel() {
   const submitHandler = async (event) => {
     event.preventDefault();
 
-    axios.post("http://localhost:8000/addNewHotel", {
+    axios.post(process.env.REACT_APP_SERVER_URL + "/addNewHotel", {
       name,
       numberOfRooms: rooms,
       numberOfAvailableRooms: availableRooms,
