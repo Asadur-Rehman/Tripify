@@ -14,6 +14,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(morgan('short'));
+
+//test route
+app.get('/', (req, res) => {
+    res.send('Hello World from asad');
+});
+
 // app.use(fileUpload());
 
 app.use(usersRouter);
